@@ -37,7 +37,12 @@ export class App {
     return totalStuds;
   }
 
-  calculate2x4BoardFeetNeeded(2x4){}
+  calculate2x4BoardFeetNeeded(totalStuds, trailerLength){
+    let headersAndSillsFeet = 8 * 4 + trailerLength * 4;
+    return totalStuds * 8 + headersAndSillsFeet;
+  }
+
+  
 
 
 
